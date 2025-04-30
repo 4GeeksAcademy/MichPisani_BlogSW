@@ -15,8 +15,6 @@ body{
     box-shadow: 0 0 20px 10px red, 0 0 40px 20px rgba(255, 0, 0, 0.6);
     transform: translateX(-50%);
     animation: glow 1s infinite alternate;
-
- 
 }
 
 @keyframes glow {
@@ -49,7 +47,7 @@ body{
   }
   
   .laser-button:hover {
-    background-color: red;
+    background-color: rgb(244, 40, 40);
     color: white;
     box-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red;
   }
@@ -65,3 +63,46 @@ body{
     object-fit: contain;
   }
   
+/*Estilo de cards*/
+.starwars-card {
+  background-color: rgba(118, 116, 116, 0.7); /* semi-transparente para ver el fondo estrellado */
+  border: 3px solid rgba(118, 116, 116, 0.3); /* borde tenue rojo */
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.starwars-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgb(247, 247, 246);
+}
+
+.favourites-btn {
+  background-color: rgb(20, 20, 20);
+  border: 2px solid rgb(231, 213, 12);
+  color: rgb(231, 213, 12);
+  padding: 5px 10px;
+  transition: all 0.2s ease;
+}
+
+.favourites-btn:hover {
+  background-color: rgb(231, 213, 12);
+  color: black;
+  box-shadow: 0 0 5px rgb(231, 213, 12);
+}
+
+
+.info-btn {
+  background-color: black;
+  border: 2px solid rgb(201, 3, 3);
+  color:rgb(201, 3, 3);
+  padding: 5px 10px;
+  transition: all 0.2s ease;
+}
+
+.info-btn:hover {
+  background-color: rgb(201, 3, 3);
+  color: black;
+  box-shadow: 0 0 5px rgb(201, 3, 3);
+}
