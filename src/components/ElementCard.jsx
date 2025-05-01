@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 
 const ElementCard  = ({type, id, name}) =>{
     const imageUrl = "https://raw.githubusercontent.com/tbone849/star-wars-guide/refs/heads/master/build/assets/img"
+    const auxType = type === "people" ? "characters" : type
     return(
         <div className="card starwars-card m-3" style={{width: "18rem"}}>
-            <img src={`${imageUrl}/${type}/${id}.jpg`} className="card-img-top" alt="element image"/>
+            <img src={`${imageUrl}/${auxType}/${id}.jpg`} className="card-img-top" alt={`${type} image`}/>
             <div className="card-body">
                 <h5 className="card-title text-center starwars-name">{name}</h5>
                 <div className="d-flex">
