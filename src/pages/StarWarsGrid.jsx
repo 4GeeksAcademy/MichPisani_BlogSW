@@ -5,7 +5,7 @@ import ElementCard from "../components/ElementCard";
 
 const StarWarsGrid = () => {
     const {type} = useParams()
-    const swapi = "https://www.swapi.tech/api/"
+    const swapi = "https://www.swapi.tech/api"
     const [elements, setElements] = useState([])
     useEffect(()=>{
         const getElements = async () => {

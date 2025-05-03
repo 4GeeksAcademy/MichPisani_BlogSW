@@ -2,7 +2,14 @@
 body{
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(250, 247, 247, 0.37) 50%, rgba(0, 0, 0, 0.7) 100%), 
   url(src/assets/img/space.jpg);
-  height: 100vh;
+  position: relative;
+  padding-bottom: 10vh;
+  min-height: 100vh;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%
 }
 
 
